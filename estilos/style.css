@@ -7,6 +7,10 @@
       font-family: "Poppins", sans-serif;
 }
 
+body{
+    background-color: #e3e3e3;
+}
+
 
 
 div.interface{
@@ -20,6 +24,9 @@ div.interface{
 header{
     width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header div.interface{
@@ -53,8 +60,11 @@ header .menu-desktop nav ul li a{
 }
 
 header .btn-contato button{
-    width: 140px;
+     width: 140px;
     height: 50px;
+}
+
+header .btn-contato button, .hero-site button{
     font-size: 18px;
     background-color: transparent;
     border: 1px solid white;
@@ -66,4 +76,109 @@ header .btn-contato button{
 header .btn-contato button:hover{
     background-color: white;
     color: black;
+}
+
+
+/* estilo do hero */
+
+section.hero-site{
+    height: 100vh;
+    background-image: url(../imagens/bg-inicio-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+.hero-site .txt-hero p span{
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+
+.hero-site button:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* Estilos das vantagens */
+
+section.vantagem{
+    padding: 80px 0;
+}
+
+.vantagem .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagem .itens-container .img-itens img{
+    max-width: 420px;
+}
+
+.vantagem .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span{
+    font-weight: 200;
+}
+
+/* Estilo dos botoes de contato */
+
+section.contato{
+    background-color: white;
+    padding: 80px 0;
+}
+
+.txt-contato, .icon-contato{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin-right: -4px;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
 }
