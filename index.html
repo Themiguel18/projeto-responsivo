@@ -13,15 +13,22 @@
         <!-- icones -->
              <script src="https://kit.fontawesome.com/c85a59c5e5.js" crossorigin="anonymous"></script>
 
-                 <!-- icones -->
+                 <!-- fechar icones -->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/query.css" media="screen">
+
+    <!-- scripts -->
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/btn-menu-mob.js" defer></script>
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="interface">
             <section class="logo">
-                <img src="imagens/logotipo.png" alt="" >
+                <img class="logo-branca" src="imagens/logotipo.png" alt="" >
+                <img class="logo-preta" src="imagens/logotipo_p.png" alt="" >
             </section>
 
             <section class="menu-desktop">
@@ -37,6 +44,22 @@
 
             <section class="btn-contato">
                 <a href="#"><button>Contato</button></a>
+            </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menu-mob-1"></div>
+                <div class="line-menu-mob-2"></div>
+            </div>
+
+               <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">início</a></li>
+                        <li><a href="#">destino</a></li>
+                        <li><a href="#">hoteis</a></li>
+                        <li><a href="#">passagens</a></li>
+                    </ul>
+                </nav>
             </section>
         </div>
 
@@ -70,11 +93,11 @@
 
              <article class="itens-container">
 
-                 <div class="img-itens">
+                 <div class="img-itens item-1" >
                     <img src="imagens/carro.png" alt="">
                 </div>
 
-                <div class="txt-itens">
+                <div class="txt-itens item-2">
                     <h3><span>Os</span> melhores <br>destinos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta laboriosam autem unde numquam</p>
                 </div>
@@ -144,7 +167,7 @@
                     </div>
 
                     <div class="txt-instru-box">
-                        <h4>você <span>fala com a gente</span> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></h4>
+                        <h4>você <span>fala com a gente</span></h4><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </article>
 
@@ -154,7 +177,7 @@
                     </div>
 
                     <div class="txt-instru-box">
-                        <h4>A gente <span>planeja</span> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></h4>
+                        <h4>A gente <span>planeja</span> </h4><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </article>
 
@@ -164,11 +187,57 @@
                     </div>
 
                     <div class="txt-instru-box">
-                        <h4>Partiu <span>viajar</span> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></h4>
+                        <h4>Partiu <span>viajar</span> </h4><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </article>
             </div>
         </div>
     </section>
+
+     <section class="contato">
+        <div class="interface">
+
+            <article class="txt-contato">
+                <h3>Fale agora com a <span>nossa equipe</span></h3>
+
+                <p>E solicite um orçamento que cabe no seu bolso</p>
+            </article>
+
+            <article class="icon-contato">
+                <a href="#"> 
+                    <button><i class="fa-brands fa-whatsapp" ></i> <p>Chamr no whatsapp</p></button>
+                </a>
+                <a href="#"> 
+                    <button><i class="fa-solid fa-envelope"></i><p>Enviar email</p></button>
+                </a>
+                <a href="#"> 
+                    <button><i class="fa-solid fa-phone"></i> <p>Ligar</p></button>
+                </a>
+                <a href="#"> 
+                    <button><i class="fa-solid fa-file-circle-exclamation"></i> <p>Formúlario</p></button>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="interface">
+            <section class="top-footer">
+                <a href="#"><button><i class="fa-brands fa-whatsapp" ></i></button></a>
+                <a href="#"><button><i class="fa-brands fa-instagram"></i></button></a>
+                <a href="#"><button><i class="fa-brands fa-tiktok"></i></button></a>
+            </section>
+
+            <section class="middle-footer">
+                <a href="#">Suporte</a>
+                <a href="#">Informações</a>
+                <a href="#">Marketing</a>
+            </section>
+
+            <section class="bottom-footer">
+                <p>CM digital 2026 &copy; Todos os direitos autorais</p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
