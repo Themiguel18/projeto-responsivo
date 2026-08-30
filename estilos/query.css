@@ -4,10 +4,18 @@
   header .menu-desktop, header .btn-contato{
     display: none;
   }
+
+   header .btn-menu-mob{
+    display: block;
+    cursor: pointer;
+
+     }
     
 }
 
 @media screen and (max-width: 750px){
+    
+}
     /* responsivo hero */
 
     

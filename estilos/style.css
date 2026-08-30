@@ -125,6 +125,7 @@ header .btn-contato button:hover, .hoteis button:hover{
 /* estilo do botao do menu mobile */
 
 header .btn-menu-mob{
+    display: none;
     position: relative;
     z-index: 99999999999;
 }
